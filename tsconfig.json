@@ -1,23 +1,18 @@
 {
   "compilerOptions": {
     "target": "es2022",
-    "module": "node16",
+    "module": "es2022",
     "lib": ["ES2022", "DOM"],
-    "moduleResolution": "node16",
+    "moduleResolution": "Bundler",
     "rootDir": ".",
     "outDir": "build",
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
     "importHelpers": true,
-    "alwaysStrict": true,
     "sourceMap": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "strictNullChecks": false,
+    "allowUnreachableCode": false,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "strict": true,
   },
   "include": ["src", "__tests__"]
 }
